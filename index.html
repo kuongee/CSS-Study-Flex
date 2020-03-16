@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sanditem</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <h4>1. 각 아이템 float 설정 + 이후 흐름을 제거하기 위해 clear 원소 추가</h4>
+    <span> <b>Clear가 없다면?</b> 이전 item의 float에 영향을 받아요! </span>
+    <div>
+      <div class="item red">item/float</div>
+      <div class="item red">item/float</div>
+      <div class="item red">item/float</div>
+      <span class="friend">friend</span>
+    </div>
+    <div id="splitter"></div>
+    <span>
+      <b>Clear 추가</b> float에 영향을 안 받으려면 이전에 clear 해줘요.
+    </span>
+    <div>
+      <div class="item red">item/float</div>
+      <div class="item red">item/float</div>
+      <div class="item red">item/float</div>
+      <div id="clearElement"></div>
+      <span class="friend">friend</span>
+    </div>
+
+    <h4>
+      2. 각 아이템 float 설정 + 아이템을 감싸는 컨테이너에 clear 속성 추가
+    </h4>
+    <span>
+      float 속성을 가진 아이템을 컨테이너로 감싸요. <br />
+      컨테이너 이후의 원소에 clear가 적용되도록 해요.
+    </span>
+    <div id="clearContainer">
+      <div class="item skyblue">item/float</div>
+      <div class="item skyblue">item/float</div>
+      <div class="item skyblue">item/float</div>
+    </div>
+    <span class="friend"> friend </span>
+
+    <h4>3. flexbox 컨테이너 설정</h4>
+    <span>
+      각 아이템은 그대로 두고 컨테이너에 flex만 설정해준다면?
+    </span>
+    <div id="flexContainer">
+      <div class="green">item</div>
+      <div class="green">item</div>
+      <div class="green">item</div>
+    </div>
+    <span class="friend"> friend </span>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

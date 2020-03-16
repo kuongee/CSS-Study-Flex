@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+}
+
+#splitter {
+  clear: both;
+  border: 1px solid #000000;
+}
+
+#clearElement {
+  clear: both;
+}
+
+#clearContainer {
+  border: 1px solid #4b0082;
+}
+
+#clearContainer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#flexContainer {
+  display: flex;
+}
+
+.friend {
+  border: 2px solid #cd5c5c;
+}
+
+.item {
+  float: left;
+}
+
+.red {
+  margin: 5px;
+  border: 1px solid #ff0000;
+}
+
+.skyblue {
+  margin: 5px;
+  border: 1px solid #a3c3d3;
+}
+
+.green {
+  margin: 5px;
+  border: 1px solid #008000;
+}
